@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            font-family: Gill Sans, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: pink;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            font-family: Gill Sans, sans-serif;
+            color: rgb(128, 0, 28);
+        }
+        .letter {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 0 20px;
+        }
+        .signature {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .dinner-options {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .dinner-button {
+            background-color: #ADD8E6;
+            border: none;
+            color: white;
+            padding: 30px 60px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .activity-options {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .activity-button {
+            background-color: #ADD8E6;
+            border: none;
+            color: white;
+            padding: 30px 60px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .dessert-options {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .dessert-button {
+            background-color: #ADD8E6;
+            border: none;
+            color: white;
+            padding: 30px 60px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="font-size: 3em;">Welcome to Virtual Phadi Date Night!</h1>
+    </div>
+    <div class="letter">
+        <p>
+            Dear P,
+        </p>
+        <p>
+            I wanted to make this virtual date night because I am trying to get creative in the ways that I can make you feel special while we are long distance. 
+        </p>
+        <p>
+            Although I would much rather be with you in person, I am so happy to have LDR date nights with you! I hope you know that I am so happy in our relationship every single day, even when long distance feels hard. Thank you for being the most amazing girlfriend ever. I don't know how I got so lucky to date the most beautiful girl in the world. 
+        </p>
+        <p>
+            Love,
+            <br>
+            Mad <span style="color: red;">❤️</span>
+        </p>
+    </div>
+    <div class="dinner-options">
+        <h2>Dinner</h2>
+        <button class="dinner-button" id="indian-button" onclick="chooseDinner('1')">1</button>
+        <button class="dinner-button" id="sushi-button" onclick="chooseDinner('2')">2</button>
+    </div>
+    <!-- <div style="text-align: center; margin-top: 40px;">
+        <p>Coded by Madison <span style="font-size: 1.5em;">🤓</span></p>
+    </div> -->
+
+    <script>
+        function chooseDinner(option) {
+            if (option === '1') {
+                document.getElementById('indian-button').innerText = 'Indian 🇮🇳';
+                document.getElementById('sushi-button').style.display = 'none';
+            } else if (option === '2') {
+                document.getElementById('indian-button').style.display = 'none';
+                document.getElementById('sushi-button').innerText = 'Sushi 🍣';
+            }
+        }
+    </script>
+    <div class="activity-options">
+        <h2>Activity</h2>
+        <button class="activity-button" id="movie-button" onclick="chooseActivity('1')">1</button>
+        <button class="activity-button" id="game-button" onclick="chooseActivity('2')">2</button>
+    </div>
+    <!-- <div style="text-align: center; margin-top: 40px;">
+        <p>Coded by Madison <span style="font-size: 1.5em;">🤓</span></p>
+    </div> -->
+
+    <script>
+        function chooseActivity(option) {
+            if (option === '1') {
+                document.getElementById('movie-button').innerText = 'Movie 🎞';
+                document.getElementById('game-button').style.display = 'none';
+            } else if (option === '2') {
+                document.getElementById('movie-button').style.display = 'none';
+                document.getElementById('game-button').innerText = 'Game 🎲';
+            }
+        }
+    </script>
+        </script>
+        <div class="dessert-options">
+            <h2>Dessert</h2>
+            <button class="dessert-button" id="cookies-button" onclick="chooseDessert('1')">1</button>
+            <button class="dessert-button" id="cookie-button" onclick="chooseDessert('2')">2</button>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <p>Coded by Madison <span style="font-size: 1.5em;">🤓</span></p>
+        </div>
+    
+        <script>
+            function chooseDessert(option) {
+                if (option === '1') {
+                    document.getElementById('cookies-button').innerText = 'Bake cookies 🍪';
+                    document.getElementById('cookie-button').style.display = 'none';
+                } else if (option === '2') {
+                    document.getElementById('cookies-button').style.display = 'none';
+                    document.getElementById('cookie-button').innerText = 'Bake cookies 🍪';
+                }
+            }
+        </script>
+</body>
+</html>
