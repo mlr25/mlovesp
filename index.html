@@ -79,6 +79,30 @@
             cursor: pointer;
             border-radius: 8px;
         }
+        details {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-align: center; /* Center text inside details */
+        }
+        details summary {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        details p,
+        details a {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        ul {
+            list-style-type: none; /* Remove bullets from list */
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -141,6 +165,26 @@
             }
         }
     </script>
+
+    <!-- Expandable dropdown 1 -->
+    <details>
+        <summary>Quizzes</summary>
+        <ul>
+            <li><a href="https://www.buzzfeed.com/theduckman/what-kinda-of-relationship-you-have-with-your-part-2e9ixe45sc" target="_blank">Quiz 1</a></li>
+            <li><a href="https://www.psychologytoday.com/us/blog/intersections/201809/20-questions-how-well-do-you-know-your-partner" target="_blank">Quiz 2</a></li>
+        </ul>
+    </details>
+
+    <!-- Expandable dropdown 2 -->
+    <details>
+        <summary>Questions</summary>
+        <ul>
+            <li><a href="https://lovewick.com/fun-questions-to-ask-your-boyfriend/" target="_blank">Questions 1</a></li>
+            <li><a href="https://www.psychologytoday.com/us/blog/intersections/201809/20-questions-how-well-do-you-know-your-partner" target="_blank">Questions 2</a></li>
+
+        </ul>
+    </details>
+
 
         <div style="text-align: center; margin-top: 40px;">
             <p>Coded by Madison <span style="font-size: 1.5em;">🤓</span></p>
